@@ -3,7 +3,7 @@
 """
 import time
 
-from celery_worker import celery_app
+from celery_entry import celery_app
 from tasks import logger
 
 
@@ -20,7 +20,7 @@ def long_time_task(seconds=10):
 
 
 @celery_app.task(queue="test-queue")
-def long_time_task(seconds=10):
+def long_time_task_with_output(seconds=10):
     seconds = int(seconds)
     for idx in range(seconds):
         if idx % 5 == 0:

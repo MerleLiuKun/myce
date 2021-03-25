@@ -69,6 +69,7 @@ ipython_config.py
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
+flower_db
 
 # Environments
 .env
@@ -82,3 +83,8 @@ venv.bak/
 # IDE
 .idea/
 .vscode/
+
+# ignore all files in conf.d/
+deploy/conf.d/*
+# except for .gitkeep
+!.gitkeep
