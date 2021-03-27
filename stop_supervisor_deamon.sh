@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pidFile="var/pids/supervisord.pid"
+pidFile="var/pid/supervisord.pid"
 sockFile="var/run/supervisor.sock"
 
 # 删除 sock 文件
