@@ -7,7 +7,7 @@ import config
 broker_url = (
     f"pyamqp://guest:guest@{config.RABBITMQ_HOST}:5672/{config.RABBITMQ_VIRTUAL_HOST}"
 )
-result_backend = f"redis://{config.REDIS_HOST}:{config.REDIS_PORT}/{config.MQ_REDIS_DB}"
+result_backend = f"redis://{config.REDIS_HOST}:{config.REDIS_PORT}/{config.CE_REDIS_DB}"
 
 # 时区设置
 enable_utc = True
